@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Cleaning Service | Demo Page</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      text-align: center;
+      padding: 72px 24px 48px;
+    }
+    .badge {
+      display: inline-block;
+      background: #e6fffa;
+      color: #047857;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: 42px;
+      margin: 0 0 16px;
+    }
+    .subtext {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      color: #4b5563;
+    }
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+    button {
+      border: none;
+      border-radius: 10px;
+      padding: 14px 22px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    button:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+    .primary {
+      background: #10b981;
+      color: white;
+    }
+    .secondary {
+      background: white;
+      color: #111827;
+      border: 1px solid #d1d5db;
+    }
+    .section {
+      padding: 28px 0;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .stat {
+      background: white;
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+    .stat strong {
+      display: block;
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+    .footer-cta {
+      text-align: center;
+      background: white;
+      border-radius: 20px;
+      padding: 36px 24px;
+      margin: 28px 0 40px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+    .footer-cta h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .note {
+      font-size: 14px;
+      color: #6b7280;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div class="badge">Local Service Demo</div>
+      <h1>Professional Home Cleaning</h1>
+      <p class="subtext">
+        Book a trusted cleaning service for your home. Fast, reliable, and stress-free.
+      </p>
+      <div class="cta-group">
+        <button id="bookNowBtn" class="primary">Book Now</button>
+        <button id="requestQuoteBtn" class="secondary">Request Quote</button>
+      </div>
+      <p class="note">Demo page for analytics tracking exercise</p>
+    </section>
+
+    <section class="section">
+      <div class="cards">
+        <div class="card">
+          <h3>Deep Cleaning</h3>
+          <p>Full home cleaning including kitchen, bathrooms, and floors.</p>
+        </div>
+        <div class="card">
+          <h3>Move In/Out</h3>
+          <p>Perfect cleaning for moving in or preparing your home for sale.</p>
+        </div>
+        <div class="card">
+          <h3>Weekly Service</h3>
+          <p>Keep your home spotless with regular scheduled cleaning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="stats">
+        <div class="stat">
+          <strong>500+</strong>
+          Happy clients
+        </div>
+        <div class="stat">
+          <strong>4.9★</strong>
+          Average rating
+        </div>
+        <div class="stat">
+          <strong>Same Day</strong>
+          Availability
+        </div>
+      </div>
+    </section>
+
+    
+  </div>
+
+  <script>
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script");
+    r.type="text/javascript";r.async=true;r.src="https://cdn.amplitude.com/script/YOUR_API_KEY_HERE.js";
+    var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i);
+    function s(e,t){e.prototype[t]=function(){this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)});return this}}
+    var o=function(){this._q=[];return this};var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"];
+    for(var c=0;c<a.length;c++){s(o,a[c])}n.Identify=o;var d=["init","logEvent"];
+    function v(e){function t(t){e[t]=function(){e._q.push({name:t,args:Array.prototype.slice.call(arguments,0)})}}
+    for(var n=0;n<d.length;n++){t(d[n])}}v(n);e.amplitude=n})(window,document);
+
+    amplitude.init('YOUR_API_KEY_HERE');
+
+    amplitude.logEvent('page_viewed', { page: 'cleaning_demo' });
+
+    function track(event) {
+      amplitude.logEvent(event);
+      alert('Tracked: ' + event);
+    }
+
+    document.getElementById('bookNowBtn').onclick = () => track('book_now_clicked');
+    document.getElementById('requestQuoteBtn').onclick = () => track('request_quote_clicked');
+    
+  </script>
+</body>
+</html>
